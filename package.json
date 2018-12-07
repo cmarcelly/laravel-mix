@@ -1,0 +1,19 @@
+{
+  "name": "laravel-mix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://cmarcelly@github.com/cmarcelly/laravel-mix.git",
+  "author": "Cédric Marcelly <cmarcelly@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "laravel-mix": "^3.0.0",
+    "nunjucks": "^3.1.4",
+    "nunjucks-webpack-plugin": "^5.0.0"
+  }
+}
